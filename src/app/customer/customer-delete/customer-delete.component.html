@@ -1,0 +1,27 @@
+<div class="row  w3-light-grey" style="  background-image: url('https://ns.yatracdn.com/common/images/fresco/fresco-footer-images/corona/car-guidlines/01.jpg');
+background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;">
+<div class="col-sm-10 w3-card w3-white"  style="margin-top:30px; margin: auto; height: 100vh; opacity: 0.9;">
+<div class="table-responsive">
+    <div style="text-align:center;padding-bottom: 10px;"><h1>All Customers</h1></div>
+<table class="table table-hover">
+    <tr>
+        <th>Customer Id</th>
+        <th>Customer username</th>
+        <th>Customer password</th>
+        <th>Customer Email</th>
+        <th>Customer Mobile Number</th>
+    </tr>
+    <tr *ngFor = "let customer of customers">
+        <td>{{customer.customerId}}</td>
+        <td>{{customer.username}}</td>
+        <td>{{customer.password}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{customer.mobileNumber}}</td>
+        <td><input type="button" (click)="deleteCustomer(customer.customerId)" value="delete" style="background-color: red; color: white;"><span class="fa fa-remove"></span></td>
+    </tr>
+</table>
+</div>
+</div>
+</div>

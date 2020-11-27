@@ -1,0 +1,28 @@
+<div class="row  w3-light-grey" style="  background-image: url('https://ns.yatracdn.com/common/images/fresco/fresco-footer-images/corona/car-guidlines/01.jpg');
+background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;">
+<div class="col-sm-10 w3-card w3-white"  style="margin-top:30px; margin: auto; height: 100vh; opacity: 0.9;">
+<div class="table-responsive">
+    <div style="text-align:center;padding-bottom: 10px;"><h1>Best Drivers</h1></div>
+<table class="table table-hover">
+    <tr>
+        <th>Driver Username</th>
+        <th>Driver password</th>
+        <th>Driver Email</th>
+        <th>Driver Mobile Number</th>
+        <th>Driver License Number</th>
+        <th>Driver Car Type</th>
+    </tr>
+    <tr *ngFor = "let driver of drivers">
+        <td>{{driver.username}}</td>
+        <td>{{driver.password}}</td>
+        <td>{{driver.email}}</td>
+        <td>{{driver.mobileNumber}}</td>
+        <td>{{driver.licenseNo}}</td>
+        <td>{{driver.cab.carType}}</td>
+    </tr>
+</table>
+</div>
+</div>
+</div>

@@ -1,0 +1,96 @@
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px; height: 100vh;" id="home">
+  
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Welcome</b>To PickMeCabs</span> <br>
+       <br> <span class="w3-padding w3-black w3-opacity-min"> Your Very Own Cab Services <br><br> Are Ready To Pick You From Your Location <br><br> And Drop You At your destination
+    </span></h1>
+  </div>
+</header>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card w3-hide-small">
+    <a routerLink="/home" class="w3-bar-item w3-button"><b> <img src="https://icon-library.net/images/car-icon-images/car-icon-images-12.jpg" style="width:25px;height:25px"></b>Pick Me Cab</a>
+    <div class="w3-right ">
+      <a routerLink="/home" class="w3-bar-item w3-button">Home</a>
+      <!-- <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="about-us">
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Contact Us</a></li>
+        </ul>
+        </li> -->
+      <a  routerLink="/customerRegistration" onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button">Register</a>
+      <a  routerLink="/customerLogin" onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button">User Login</a>
+      <a  routerLink="/adminLogin" onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button">Company Login</a>
+    </div>
+  </div>
+</div>
+
+<div class="w3-content w3-padding" style="max-width:1564px">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card w3-hide-large w3-hide-medium">
+  <a routerLink="/home" class="w3-bar-item w3-button"><b> <img src="https://icon-library.net/images/car-icon-images/car-icon-images-12.jpg" style="width:25px;height:25px"></b>PickMeCab</a>
+    <div style="display: inline-flex;" class="">
+      <a routerLink="/home" class="w3-bar-item w3-button">Home</a>
+      <a  routerLink="/customerRegister" onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button">Register</a>
+      <a  routerLink="/customerLogin" onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button">User Login</a>
+      <a  routerLink="/adminLogin" onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button">Company Login</a>
+    </div>
+  </div>
+
+
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Pick Me Cabs</h3>
+    <p>Pick Me Cabs is India’s largest mobility platform and one of the world’s largest ride-hailing companies, serving 250+ cities across India, Australia, New Zealand, and the UK. The Pick Me Cabs app offers mobility solutions by connecting customers to drivers and a wide range of vehicles across bikes, auto-rickshaws, metered taxis, and cabs, enabling convenience and transparency for hundreds of millions of consumers and over 1.5 million driver-partners.</p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Why Use PickMeCabs</h3>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://cms-web.olacabs.com/00000000368.jpg" alt="John" style="width:200px;height:140px">
+      <h3>Cabs For EveryPocket</h3>
+      <p>From Sedans and SUVs to Luxury cars for special occasions, we have cabs to suit every pocket</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom" style="padding-top: 20px;">
+      <img src="https://cms-web.olacabs.com/00000000370.jpg" alt="Jane" style="width:120px;height:120px">
+      <h3>Secure and Safer Rides</h3>
+      <p>Verified drivers, an emergency alert button, and live ride tracking are some of the features that we have in place to ensure you a safe travel experience.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://cms-web.olacabs.com/00000000372.jpg" alt="Mike" style="width:150px;height:150px">
+      <h3>Cashless Rides</h3>
+      <p>Now go cashless and travel easy. Simply recharge your Ola money or add your credit/debit card to enjoy hassle free payments.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://cms-web.olacabs.com/00000000371.jpg" alt="Dan" style="width:150px;height:150px">
+      <h3>In Cab Entertainment</h3>
+      <p>Play music, watch videos and a lot more with Ola Play! Also stay connected even if you are travelling through poor network areas with our free wifi facility.</p>
+    </div>
+  </div>
+  
+</div>
+<!-- <div class="w3-container" style=" padding:0px;">
+  <img src="https://ak2.picdn.net/shutterstock/videos/29358802/thumb/12.jpg" class="w3-image" style="width:100%; padding-bottom:12px">
+</div> -->
+
+<!--  -->
+
+
+
+<!--  -->
+
+   <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  <footer class="w3-center w3-black w3-padding-16">
+      <p>Product Of Capgemini</p>
+</footer>

@@ -1,0 +1,30 @@
+
+<div id="id01" class="modal" style="display: block;">
+    <form #driverform = ngForm (ngSubmit) = "driverform.valid && validateDriver(driverform)" class="modal-content animate" style="width:80%">
+        <div class="container1">
+            <h1>Driver Login Page</h1>
+        <div>
+            <label>Username: </label>
+            <input name = "username" ngModel #usernameControl=ngModel required minlength="3" type="text">
+        </div>
+        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.required" class="error">
+            Username is required
+        </div>
+        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.minlength" class="error">
+            Minimum length is 3
+        </div>
+    
+    
+        <div>
+            <label>Password: </label>
+            <input name = "password" ngModel #passwordControl=ngModel required type="password"> 
+        </div>
+        <div *ngIf = "passwordControl.errors!=null && passwordControl.errors.required" class="error">
+            Password is required
+        </div>
+    </div>
+    <div class="container1" style="background-color:#f1f1f1">
+        <input type="submit" value="Login">
+    </div>
+    </form>
+    </div>
