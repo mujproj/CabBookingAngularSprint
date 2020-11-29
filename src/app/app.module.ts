@@ -32,6 +32,7 @@ import { DeleteAdminComponent } from './admin/delete-admin/delete-admin.componen
 import { AfterLoginComponent } from './customer/after-login/after-login.component';
 import { AfterAdminLoginComponent } from './admin/after-admin-login/after-admin-login.component';
 import { AfterDriverLoginComponent } from './driver/after-driver-login/after-driver-login.component';
+import { RateDriverComponent } from './driver/rate-driver/rate-driver.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { AfterDriverLoginComponent } from './driver/after-driver-login/after-dri
     AfterLoginComponent,
     AfterAdminLoginComponent,
     AfterDriverLoginComponent,
+    RateDriverComponent,
   ],
   imports: [
     BrowserModule,

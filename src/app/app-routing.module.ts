@@ -15,6 +15,7 @@ import { CustomerAddComponent } from './customer/customer-add/customer-add.compo
 import { CustomerDeleteComponent } from './customer/customer-delete/customer-delete.component';
 import { CustomerUpdateComponent } from './customer/customer-update/customer-update.component';
 import { CustomerValidateComponent } from './customer/customer-validate/customer-validate.component';
+import { RateDriverComponent } from './driver/rate-driver/rate-driver.component';
 import { AfterDriverLoginComponent } from './driver/after-driver-login/after-driver-login.component';
 import { BestDriverComponent } from './driver/best-driver/best-driver.component';
 import { DriverAddComponent } from './driver/driver-add/driver-add.component';
@@ -49,7 +50,8 @@ const routes: Routes = [
   {path: 'retrieveTripsDateWise', component:GetTripDateWiseComponent},
   {path: 'afterLogin', component:AfterLoginComponent},
   {path: 'afterAdminLogin', component:AfterAdminLoginComponent},
-  {path: 'afterDriverLogin', component:AfterDriverLoginComponent}
+  {path: 'afterDriverLogin', component:AfterDriverLoginComponent},
+  {path: 'rateDriver', component:RateDriverComponent}
 ];
 
 @NgModule({
