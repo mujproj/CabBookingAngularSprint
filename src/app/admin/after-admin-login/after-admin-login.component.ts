@@ -47,4 +47,8 @@ export class AfterAdminLoginComponent implements OnInit {
   viewAllCustomers(){
     this.route.navigate(["/allCustomers"]);
   }
+
+  BookATrip(){
+    this.route.navigate(["/addTripBooking"]);
+  }
 }
