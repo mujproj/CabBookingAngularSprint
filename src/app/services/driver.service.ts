@@ -8,6 +8,7 @@ import { Driver } from '../models/driver';
 })
 export class DriverService {
 
+  driver:any;
   constructor(private client:HttpClient) { }
   baseUrl = "http://localhost:8088/driver"
 
@@ -40,5 +41,12 @@ export class DriverService {
     const url = this.baseUrl + "/retrieve/viewBestDrivers";
     let bestDrivers = this.client.get(url);
     return bestDrivers;
+  }
+
+  getDriver(){
+    return this.driver;
+  }
+  sendData(driver:any){
+    this.driver = driver;
   }
 }

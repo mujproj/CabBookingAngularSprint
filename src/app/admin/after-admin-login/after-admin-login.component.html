@@ -1,0 +1,40 @@
+<div *ngIf="admin !== undefined">
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card w3-hide-small">
+          <a routerLink="/home" class="w3-bar-item w3-button"><b> <img src="https://icon-library.net/images/car-icon-images/car-icon-images-12.jpg" style="width:25px;height:25px"></b>Pick Me Cab</a>
+          <div class="w3-right ">
+            <a routerLink="/home" class="w3-bar-item w3-button">Home</a>
+            <a routerLink="/updateAdmin" class="w3-bar-item w3-button">Udate Profile</a>
+          </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="main">
+    <div class="firstSection">
+        Welcome {{admin.username}} To Our Portal
+        <br>
+        Email Id:  {{admin.email}}
+        Mobile Number: {{admin.mobileNumber}}
+        Admin id: {{admin.adminId}}
+    </div>
+    <div class="thirdSection">
+        What Would you Want to do next?
+        <br>
+        <button (click)="goToBestDrivers()">View Best Drivers</button>
+        <br>
+        <button (click)="goToCustomerIdTrip()">View Trip Details By Customer Id</button>
+        <br>
+        <button (click)="viewYourBill()">View Trip Bill</button>
+        <br>
+        <button (click) = "viewTripCabWise()">View Trip CabWise</button>
+        <br>
+        <button (click)="viewTripDateWise()">View Trip DateWise</button>
+        <br>
+        <button (click)="viewTripCustomerWise()">View Trip Customer Wise</button>
+        <br>
+        <button (click)="viewAllCustomers()">View All Customers</button>
+    </div>
+    </div>
+</div>

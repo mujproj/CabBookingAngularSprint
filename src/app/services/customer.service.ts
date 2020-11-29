@@ -11,6 +11,8 @@ export class CustomerService {
   constructor(private client:HttpClient) { }
   baseUrl = "http://localhost:8088/customer"
 
+  customer:Customer | undefined;
+
   addCustomer(customer:Customer):Observable<Customer>{
     const url = this.baseUrl + "/add";
     let observable:Observable<Customer> = this.client.post<Customer>(url,customer);
@@ -48,4 +50,11 @@ export class CustomerService {
     return observable;
   }
 
+  getDataFromForm(customer:Customer){
+    this.customer = customer;
+  }
+
+  sendDataToAfterLogin(){
+    return this.customer;
+  }
 }

@@ -1,0 +1,77 @@
+
+<div id="id01" class="modal" style="display: block;">
+    <form #tripBookingform = ngForm (ngSubmit) = "tripBookingform.valid && addTripBooking(tripBookingform)" class="modal-content animate" style="width:80%">
+        <div class="container1">
+            <h1>Trip Booking Page</h1>
+        <div>
+            <label for="">Customer Id</label>
+            <input name="customerId" class="form-control">
+        </div>
+        <div>
+            <label for="">From Location</label>
+            <input name="fromLocation" class="form-control">
+        </div>
+        <div>
+            <label for="">To Location</label>
+            <input name="toLocation" class="form-control">
+        </div>
+        <div>
+            <label for="">From Date Time</label>
+            <input name="fromDateTime" class="form-control">
+        </div>
+        <div>
+            <label for="">To Date Time</label>
+            <input name="toDateTime" class="form-control">
+        </div>
+        <div>
+            <label for="">Dsitance In Km</label>
+            <input name="distanceInKm" class="form-control">
+        </div>
+        <div>
+            <label for="">Bill</label>
+            <input name="bill" class="form-control">
+        </div>
+        <div>
+            <label>Username: </label>
+            <input name = "username" ngModel #usernameControl=ngModel required minlength="3" class="form-control">
+        </div>
+        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.required" class="error" style="color: red;">
+            Username is required
+        </div>
+        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.minlength" class="error" style="color: red;">
+            Minimum length is 3
+        </div>
+    
+        <div>
+            <label for="">Car Type</label>
+            <input name="carType" required class="form-control">
+        </div>
+
+        <div>
+            <label for="">Per Km Rate</label>
+            <input name="perKmRate" required class="form-control">
+        </div>
+    
+        <div>
+            <label>License Number </label>
+            <input name = "licenseNo" ngModel #licenseNoControl=ngModel required class="form-control">
+        </div>
+        <div *ngIf = "licenseNoControl.errors!=null && licenseNoControl.errors.required" class="error" style="color: red;">
+            License Number is required
+        </div>
+    
+    
+        <div>
+            <label>Mobile number: </label>
+            <input name = "mobileNumber" ngModel class="form-control">
+        </div>
+        <div>
+            <label>Email: </label>
+            <input name = "email" ngModel class="form-control" type="email">
+        </div>
+    </div>
+        <div class="container1" style="background-color:#f1f1f1">
+        <input type="submit" value="Submit Details" class="form-control btn btn-success">
+    </div>
+    </form>
+    </div>

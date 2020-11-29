@@ -12,7 +12,6 @@ background-repeat: no-repeat;
         <th>Driver Email</th>
         <th>Driver Mobile Number</th>
         <th>Driver License Number</th>
-        <th>Driver Car Type</th>
     </tr>
     <tr *ngFor = "let driver of drivers">
         <td>{{driver.username}}</td>
@@ -20,7 +19,6 @@ background-repeat: no-repeat;
         <td>{{driver.email}}</td>
         <td>{{driver.mobileNumber}}</td>
         <td>{{driver.licenseNo}}</td>
-        <td>{{driver.cab.carType}}</td>
     </tr>
 </table>
 </div>

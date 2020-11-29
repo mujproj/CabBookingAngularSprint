@@ -1,0 +1,16 @@
+<div id="id01" class="modal" style="display: block;">
+    <form action="">
+        <div class="container1">
+        <div>
+            <label for="">Enter the Customer Id Whose Trip Bookings Bill You Want</label>
+            <input type="number" class="form-control" name="customerId" [(ngModel)] = "id">
+        </div>
+        <input type="submit" class="form-control" (click)="customerBill(id)">
+    </div>
+    </form>
+    <div *ngIf="bill !== undefined">
+        <div style="background-color: black; opacity: 0.9; color: white;">
+            The Customer Bill Is: {{bill}}
+        </div>
+    </div>
+</div>

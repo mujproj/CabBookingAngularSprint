@@ -21,6 +21,17 @@ import { DriverUpdateComponent } from './driver/driver-update/driver-update.comp
 import { CustomerDeleteComponent } from './customer/customer-delete/customer-delete.component';
 import { BestDriverComponent } from './driver/best-driver/best-driver.component';
 import { HomeComponent } from './home/home.component';
+import { TripbookingaddComponent } from './tripbooking/tripbookingadd/tripbookingadd.component';
+import { CustomerwiseComponent } from './tripbooking/customerwise/customerwise.component';
+import { CustomerbillComponent } from './tripbooking/customerbill/customerbill.component';
+import { AdminGetTripsByIdComponent } from './admin/admin-get-trips-by-id/admin-get-trips-by-id.component';
+import { GetTripCabWiseComponent } from './admin/get-trip-cab-wise/get-trip-cab-wise.component';
+import { GetTripsCustomerWiseComponent } from './admin/get-trips-customer-wise/get-trips-customer-wise.component';
+import { GetTripDateWiseComponent } from './admin/get-trip-date-wise/get-trip-date-wise.component';
+import { DeleteAdminComponent } from './admin/delete-admin/delete-admin.component';
+import { AfterLoginComponent } from './customer/after-login/after-login.component';
+import { AfterAdminLoginComponent } from './admin/after-admin-login/after-admin-login.component';
+import { AfterDriverLoginComponent } from './driver/after-driver-login/after-driver-login.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +49,17 @@ import { HomeComponent } from './home/home.component';
     CustomerDeleteComponent,
     BestDriverComponent,
     HomeComponent,
+    TripbookingaddComponent,
+    CustomerwiseComponent,
+    CustomerbillComponent,
+    AdminGetTripsByIdComponent,
+    GetTripCabWiseComponent,
+    GetTripsCustomerWiseComponent,
+    GetTripDateWiseComponent,
+    DeleteAdminComponent,
+    AfterLoginComponent,
+    AfterAdminLoginComponent,
+    AfterDriverLoginComponent,
   ],
   imports: [
     BrowserModule,

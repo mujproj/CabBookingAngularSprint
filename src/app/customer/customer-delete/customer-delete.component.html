@@ -19,7 +19,7 @@ background-repeat: no-repeat;
         <td>{{customer.password}}</td>
         <td>{{customer.email}}</td>
         <td>{{customer.mobileNumber}}</td>
-        <td><input type="button" (click)="deleteCustomer(customer.customerId)" value="delete" style="background-color: red; color: white;"><span class="fa fa-remove"></span></td>
+        <td><button type="button" (click)="deleteCustomer(customer.customerId)"  style="background-color: red; color: white;"><span class="fa fa-trash" aria-hidden="true"></span></button></td>
     </tr>
 </table>
 </div>

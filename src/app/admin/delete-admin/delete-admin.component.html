@@ -1,0 +1,15 @@
+<h1>Delete Admin</h1>
+
+<form #deleteform = ngForm (ngSubmit) = "deleteform.valid && deleteAdmin(deleteform)">
+    <div>
+        <label>Admin Id: </label>
+        <input name = "adminid" ngModel #adminidControl=ngModel required class="form-control">
+    </div>
+    <div *ngIf = "adminidControl.errors!=null && adminidControl.errors.required" class="error">
+        Id is required
+    </div>
+
+    <input type="submit" value="Delete Admin">
+</form>
+
+<p>delete-admin works!</p>

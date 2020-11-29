@@ -1,39 +1,53 @@
-<h1>Update Customer Page</h1>
 
-<form #customerform = ngForm (ngSubmit) = "customerform.valid && updateCustomer(customerform)">
+<div id="id01" class="modal" style="display: block;">
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card w3-hide-small">
+          <a routerLink="/home" class="w3-bar-item w3-button"><b> <img src="https://icon-library.net/images/car-icon-images/car-icon-images-12.jpg" style="width:25px;height:25px"></b>Pick Me Cab</a>
+          <div class="w3-right ">
+            <a routerLink="/home" class="w3-bar-item w3-button">Home</a>
+            <a routerLink="/updateCustomer" class="w3-bar-item w3-button">Udate Profile</a>
+          </div>
+        </div>
+    </div>
+    <form #customerform = ngForm (ngSubmit) = "customerform.valid && updateCustomer(customerform)" class="modal-content animate" style="width:80%">
+        <div class="container1">
+            <h1>Customer Update Page</h1>
+        <div>
+            <label for="">Id:</label>
+            <input name="id" ngModel class="form-control">
+        </div>
+        <div>
+            <label>Username: </label>
+            <input name = "username" ngModel #usernameControl=ngModel required minlength="3" class="form-control">
+        </div>
+        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.required" class="error" style="color: red;"> 
+            Username is required
+        </div>
+        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.minlength" class="error"  style="color: red;">
+            Minimum length is 3
+        </div>
     
-    <div>
-        <label>Id</label>
-        <input name="id" ngModel required>
+    
+        <div>
+            <label>Password: </label>
+            <input name = "password" ngModel #passwordControl=ngModel required class="form-control" type="password">
+        </div>
+        <div *ngIf = "passwordControl.errors!=null && passwordControl.errors.required" class="error" style="color: red;">
+            Password is required
+        </div>
+    
+    
+        <div>
+            <label>Mobile number: </label>
+            <input name = "mobileNumber" ngModel class="form-control">
+        </div>
+        <div>
+            <label>Email: </label>
+            <input name = "email" ngModel class="form-control" type="email">
+        </div>
     </div>
-    <div>
-        <label>Username: </label>
-        <input name = "username" ngModel #usernameControl=ngModel required minlength="3">
+        <div class="container1" style="background-color:#f1f1f1">
+        <input type="submit" value="Submit Details" class="form-control btn btn-success">
     </div>
-    <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.required" class="error">
-        Username is required
+    </form>
     </div>
-    <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.minlength" class="error">
-        Minimum length is 3
-    </div>
-
-
-    <div>
-        <label>Password: </label>
-        <input name = "password" ngModel #passwordControl=ngModel required> 
-    </div>
-    <div *ngIf = "passwordControl.errors!=null && passwordControl.errors.required" class="error">
-        Password is required
-    </div>
-
-
-    <div>
-        <label>Mobile number: </label>
-        <input name = "mobileNumber" ngModel>
-    </div>
-    <div>
-        <label>Email: </label>
-        <input name = "email" ngModel>
-    </div>
-    <input type="submit" value="Submit Details">
-</form>

@@ -1,0 +1,20 @@
+<div *ngIf="driver !== undefined">
+    <div class="main"></div>
+    <div class="firstSection">
+        Welcome {{driver.username}} To Our Portal
+        <br>
+        Email Id:  {{driver.email}}
+        Mobile Number: {{driver.mobileNumber}}
+        Admin id: {{driver.driverId}}
+    </div>
+    <div class="secondSection">
+        Do You Want To Update Your Profile?
+        <button (click)="updateDriver()">Update Your Profile</button>
+    </div>
+    <div class="thirdSection">
+        What Would you Want to do next?
+        <br>
+        <button (click)="bestDrivers()">View Best Drivers</button>
+    </div>
+    </div>
+    

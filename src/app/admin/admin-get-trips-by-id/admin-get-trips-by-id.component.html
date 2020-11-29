@@ -1,0 +1,34 @@
+<div id="id01" class="modal" style="display: block;">
+    <form action="">
+        <div class="container1">
+        <div>
+            <label for="">Enter the Customer Id Whose Trip Bookings You Want To Get</label>
+            <input type="number" class="form-control" name="customerId" [(ngModel)] = "id">
+        </div>
+        <input type="submit" class="form-control" (click)="findTrip(id)">
+    </div>
+    </form>
+    <div *ngIf="trips !== undefined">
+    <div class="col-sm-10 w3-card w3-white"  style="margin-top:30px; margin: auto; opacity: 0.9;">
+        <div class="table-responsive">
+            <div style="text-align:center;padding-bottom: 10px;"><h1>All Customers</h1></div>
+    <table class="table table-hover">
+        <tr>
+            <th>Customer Id</th>
+            <th>TripBookingId</th>
+            <th>Driver Assigned</th>
+            <th>From Location</th>
+            <th>To Location</th>
+        </tr>
+        <tr *ngFor = "let tripBooking of trips">
+            <td>{{tripBooking.customerId}}</td>
+            <td>{{tripBooking.tripBookingId}}</td>
+            <td>{{tripBooking.driver.username}}</td>
+            <td>{{tripBooking.fromLocation}}</td>
+            <td>{{tripBooking.toLocation}}</td>
+        </tr>
+    </table>
+    </div>
+    </div>
+</div>
+</div>

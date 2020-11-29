@@ -6,10 +6,10 @@
             <label>Username: </label>
             <input name = "username" ngModel #usernameControl=ngModel required minlength="3" class="form-control">
         </div>
-        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.required" class="error">
+        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.required" class="error" style="color: red;">
             Username is required
         </div>
-        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.minlength" class="error">
+        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.minlength" class="error" style="color: red;">
             Minimum length is 3
         </div>
     
@@ -18,7 +18,7 @@
             <label>Password: </label>
             <input name = "password" ngModel #passwordControl=ngModel required class="form-control" type="password">
         </div>
-        <div *ngIf = "passwordControl.errors!=null && passwordControl.errors.required" class="error">
+        <div *ngIf = "passwordControl.errors!=null && passwordControl.errors.required" class="error" style="color: red;">
             Password is required
         </div>
     
@@ -35,10 +35,10 @@
             <label>LicenseNo: </label>
             <input name = "licenseNo" ngModel #licenseNoControl=ngModel required minlength="3" class="form-control">
         </div>
-        <div *ngIf = "licenseNoControl.errors!=null && licenseNoControl.errors.required" class="error">
+        <div *ngIf = "licenseNoControl.errors!=null && licenseNoControl.errors.required" class="error" style="color: red;">
             LicenseNo is required
         </div>
-        <div *ngIf = "licenseNoControl.errors!=null && licenseNoControl.errors.minlength" class="error">
+        <div *ngIf = "licenseNoControl.errors!=null && licenseNoControl.errors.minlength" class="error" style="color: red;">
             Minimum length is 3
         </div>
         <div>

@@ -8,6 +8,7 @@ import { Admin } from '../models/admin';
 })
 export class AdminService {
 
+  admin:any;
   constructor(private client:HttpClient) { }
   baseUrl = "http://localhost:8088/admin"
 
@@ -28,6 +29,11 @@ export class AdminService {
     const url = this.baseUrl + "/update/" + adminId;
     let observable:Observable<Admin> = this.client.put<Admin>(url, admin);
     return observable;
+  }
+
+  deleteAdmin(id:number){
+    const url = this.baseUrl + "/delete/" + id;
+    return this.client.delete(url);
   }
 
   getTripById(id:number){
@@ -58,5 +64,13 @@ export class AdminService {
     const url = this.baseUrl + `/retrieve/getAllTripsForDays/${id}/${fromDate}/${toDate}`;
     let trips = this.client.get(url);
     return trips;
+  }
+
+  retrieveData(){
+    return this.admin;
+  }
+
+  sendData(admin:any){
+    this.admin = admin;
   }
 }

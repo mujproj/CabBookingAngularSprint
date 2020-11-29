@@ -7,10 +7,10 @@
             <label>Username: </label>
             <input name = "username" ngModel #usernameControl=ngModel required minlength="3" type="text">
         </div>
-        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.required" class="error">
+        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.required" class="error" style="color: red;">
             Username is required
         </div>
-        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.minlength" class="error">
+        <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.minlength" class="error" style="color: red;">
             Minimum length is 3
         </div>
     
@@ -19,7 +19,7 @@
             <label>Password: </label>
             <input name = "password" ngModel #passwordControl=ngModel required type="password"> 
         </div>
-        <div *ngIf = "passwordControl.errors!=null && passwordControl.errors.required" class="error">
+        <div *ngIf = "passwordControl.errors!=null && passwordControl.errors.required" class="error" style="color: red;">
             Password is required
         </div>
     </div>
