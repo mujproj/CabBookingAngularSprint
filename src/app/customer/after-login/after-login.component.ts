@@ -33,4 +33,7 @@ export class AfterLoginComponent implements OnInit {
     this.route.navigate(["/updateCustomer"]);
   }
 
+  rateDriver(){
+    this.route.navigate(["/rateDriver"]);
+  }
 }
