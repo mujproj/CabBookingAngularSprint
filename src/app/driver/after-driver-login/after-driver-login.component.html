@@ -1,7 +1,14 @@
 <div *ngIf="driver !== undefined">
     <div class="main"></div>
+
+    <div class="back1">
+        <div class="sections1 jumbotron" >
     <div class="firstSection">
-        Welcome {{driver.username}} To Our Portal
+        <h2> 
+            <style>
+                h2 {text-align: center;}
+                </style>
+        Welcome {{driver.username}} To Our Portal </h2>
         <br>
         Email Id:  {{driver.email}}
         Mobile Number: {{driver.mobileNumber}}
@@ -17,4 +24,5 @@
         <button (click)="bestDrivers()">View Best Drivers</button>
     </div>
     </div>
-    
+    </div>
+    </div>

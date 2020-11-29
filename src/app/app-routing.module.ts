@@ -26,7 +26,7 @@ import { CustomerwiseComponent } from './tripbooking/customerwise/customerwise.c
 import { TripbookingaddComponent } from './tripbooking/tripbookingadd/tripbookingadd.component';
 
 const routes: Routes = [
-  {path: 'home', component:HomeComponent},
+  {path: '', component:HomeComponent},
   {path: 'customerRegistration', component:CustomerAddComponent },
   {path: 'adminRegistration', component:AdminAddComponent},
   {path: 'addCabs', component:CabAddComponent},

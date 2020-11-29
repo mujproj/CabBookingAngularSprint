@@ -1,0 +1,16 @@
+.back {
+    background-image: url("https://ns.yatracdn.com/common/images/fresco/fresco-footer-images/corona/car-guidlines/01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   height: 50vw;
+   overflow: hidden;
+}
+.sections{
+    text-align: center;
+    color: black;
+    font-size: 22px;
+ opacity: 0.9;  
+    margin-top: 50px;
+    padding-top: 5px;
+}

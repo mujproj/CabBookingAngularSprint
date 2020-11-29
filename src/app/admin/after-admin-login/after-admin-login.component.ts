@@ -25,7 +25,7 @@ export class AfterAdminLoginComponent implements OnInit {
   }
 
   goToCustomerIdTrip(){
-    this.route.navigate(["/customerTrips"]);
+    this.route.navigate(["/retrieveTripsById"]);
   }
 
   viewYourBill(){
